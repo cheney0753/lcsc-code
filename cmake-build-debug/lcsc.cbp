@@ -91,6 +91,9 @@
 		<Unit filename="/export/scratch1/zhong/study/courses/lcsc/lcsc-code/src/rng/lcrng.cpp">
 			<Option target="simple_example"/>
 		</Unit>
+		<Unit filename="/export/scratch1/zhong/study/courses/lcsc/lcsc-code/src/utils/utils.cpp">
+			<Option target="simple_example"/>
+		</Unit>
 		<Unit filename="/export/scratch1/zhong/study/courses/lcsc/lcsc-code/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
