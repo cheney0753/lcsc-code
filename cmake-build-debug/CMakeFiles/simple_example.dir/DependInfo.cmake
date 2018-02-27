@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/zhong/Documents/LCSC/lcsc-code/example/simple_example.cpp" "/home/zhong/Documents/LCSC/lcsc-code/cmake-build-debug/CMakeFiles/simple_example.dir/example/simple_example.cpp.o"
-  "/home/zhong/Documents/LCSC/lcsc-code/src/rng/distributions.cpp" "/home/zhong/Documents/LCSC/lcsc-code/cmake-build-debug/CMakeFiles/simple_example.dir/src/rng/distributions.cpp.o"
-  "/home/zhong/Documents/LCSC/lcsc-code/src/rng/lcrng.cpp" "/home/zhong/Documents/LCSC/lcsc-code/cmake-build-debug/CMakeFiles/simple_example.dir/src/rng/lcrng.cpp.o"
+  "/export/scratch1/zhong/study/courses/lcsc/lcsc-code/example/simple_example.cpp" "/export/scratch1/zhong/study/courses/lcsc/lcsc-code/cmake-build-debug/CMakeFiles/simple_example.dir/example/simple_example.cpp.o"
+  "/export/scratch1/zhong/study/courses/lcsc/lcsc-code/src/rng/distributions.cpp" "/export/scratch1/zhong/study/courses/lcsc/lcsc-code/cmake-build-debug/CMakeFiles/simple_example.dir/src/rng/distributions.cpp.o"
+  "/export/scratch1/zhong/study/courses/lcsc/lcsc-code/src/rng/lcrng.cpp" "/export/scratch1/zhong/study/courses/lcsc/lcsc-code/cmake-build-debug/CMakeFiles/simple_example.dir/src/rng/lcrng.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 

@@ -1,5 +1,6 @@
 #pragma once
-
+#define _USE_MATH_DEFINES
+#include <cmath>
 #include "rng.hpp"
 #include <cstdint>
 
@@ -31,14 +32,20 @@ class uniform_real_distribution {
 
 class normal_distribution {
   public:
-    normal_distribution(rng_engine& engine, double mean = 0.0f, double stddev = 1.0f):
-            engine_(engine), mean_(mean), stddev_(stddev) {};
+    normal_distribution(rng_engine& engine, double mean = 0.0f, double stddev = 1.0f,
+                        double min = 0.0f, double max = 1.0f):
+            engine_(engine), mean_(mean), stddev_(stddev), min_(min), max_(max) {};
+
     double operator()();
+
   private:
-    double pdf();
+    double pdf(double x);
     rng_engine& engine_;
     double mean_;
-    double stdv_;
+    double stddev_;
+    double min_;
+    double max_;
+    double M_ =  1 / sqrt( 2 * M_PI ) / stddev_;
 };
 
 class poisson_distribution {

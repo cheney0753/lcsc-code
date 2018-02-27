@@ -15,6 +15,8 @@ rng/rng.hpp
 ../include/rng/rng.hpp
 
 ../include/rng/distributions.hpp
+cmath
+-
 rng.hpp
 ../include/rng/rng.hpp
 cstdint
@@ -30,11 +32,11 @@ cstdint
 cstdint
 -
 
-/home/zhong/Documents/LCSC/lcsc-code/example/simple_example.cpp
+/export/scratch1/zhong/study/courses/lcsc/lcsc-code/example/simple_example.cpp
 iostream
 -
 lcsc.hpp
-/home/zhong/Documents/LCSC/lcsc-code/example/lcsc.hpp
+/export/scratch1/zhong/study/courses/lcsc/lcsc-code/example/lcsc.hpp
 map
 -
 cmath
@@ -46,15 +48,15 @@ string
 ctime
 -
 
-/home/zhong/Documents/LCSC/lcsc-code/src/rng/distributions.cpp
+/export/scratch1/zhong/study/courses/lcsc/lcsc-code/src/rng/distributions.cpp
 rng/distributions.hpp
-/home/zhong/Documents/LCSC/lcsc-code/src/rng/rng/distributions.hpp
+/export/scratch1/zhong/study/courses/lcsc/lcsc-code/src/rng/rng/distributions.hpp
 iostream
 -
 
-/home/zhong/Documents/LCSC/lcsc-code/src/rng/lcrng.cpp
+/export/scratch1/zhong/study/courses/lcsc/lcsc-code/src/rng/lcrng.cpp
 rng/lcrng.hpp
-/home/zhong/Documents/LCSC/lcsc-code/src/rng/rng/lcrng.hpp
+/export/scratch1/zhong/study/courses/lcsc/lcsc-code/src/rng/rng/lcrng.hpp
 iostream
 -
 

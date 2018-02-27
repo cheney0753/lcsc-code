@@ -6,12 +6,12 @@ CMakeFiles/simple_example.dir/example/simple_example.cpp.o
  ../include/rng/distributions.hpp
  ../include/rng/lcrng.hpp
  ../include/rng/rng.hpp
- /home/zhong/Documents/LCSC/lcsc-code/example/simple_example.cpp
+ /export/scratch1/zhong/study/courses/lcsc/lcsc-code/example/simple_example.cpp
 CMakeFiles/simple_example.dir/src/rng/distributions.cpp.o
  ../include/rng/distributions.hpp
  ../include/rng/rng.hpp
- /home/zhong/Documents/LCSC/lcsc-code/src/rng/distributions.cpp
+ /export/scratch1/zhong/study/courses/lcsc/lcsc-code/src/rng/distributions.cpp
 CMakeFiles/simple_example.dir/src/rng/lcrng.cpp.o
  ../include/rng/lcrng.hpp
  ../include/rng/rng.hpp
- /home/zhong/Documents/LCSC/lcsc-code/src/rng/lcrng.cpp
+ /export/scratch1/zhong/study/courses/lcsc/lcsc-code/src/rng/lcrng.cpp
