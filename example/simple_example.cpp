@@ -6,6 +6,7 @@
 #include <iomanip>
 #include <string>
 #include <ctime>
+#include <vector>
 
 
 int main() {
@@ -19,53 +20,31 @@ int main() {
 //        std::cout << r.next_schrage() << "\n";
 //    }
 
-    auto d = lcsc::uniform_int_distribution( r, 0, 100);
+    auto d_unif_int = lcsc::uniform_int_distribution( r, 0, 100);
 
 //    auto d = lcsc::uniform_real_distribution( r);
 
-    for (int i = 0; i < 100; ++i) {
-        std::cout << d() << "\n";
-    }
-
-    double scl = 10.0f;
-
-
-    // plot histogram
-    std::map <int, int> hist{};
-    for (int i = 0; i < 1000000; ++i) {
-        ++ hist[std::floor(scl *d())];
-    }
-
-    for(auto p : hist) {
-        std::cout << std::setw(2)
-                  << p.first/scl << ' ' << std::string(p.second/500, '*') << '\n';
-    }
-
     auto d_normal = lcsc::normal_distribution(r,  1.0f, 2.0f, -6.0f, 6.0f);
 
+    auto hist_normal = lcsc::hist(d_normal, 100000, 0.1f);
+    hist_normal.plot(50);
 
-    std::map <int, int> hist_normal{};
-    for (int i = 0; i < 1000000; ++i) {
-        ++ hist_normal[std::floor( scl * d_normal())];
+
+    auto hist_unif_int = lcsc::hist(d_unif_int, 100000, 1.0f);
+    hist_unif_int.plot(50);
+
+
+    // compute the chi-square value
+
+    std::cout << "The pdf of uniform_int_dist is " << d_unif_int.pdf(50) << std::endl;
+
+    double  chisq_unif_int;
+
+    std::vector<int> v_vec;
+
+    for(auto p : hist_unif_int.get_hist_map()){
+        double Ei = hist_unif_int.get_N() * d_unif_int.pdf( p.first );
+
+        v_vec.push_back( pow(p.second - Ei, 2) / Ei);
     }
-
-    for(auto p : hist_normal) {
-        std::cout << std::setw(2)
-                  << p.first / scl << ' ' << std::string(p.second/500, '*') << '\n';
-    }
-
-
-    auto d_poisson = lcsc::poisson_distribution(r, 1, 0, 20);
-
-
-    std::map <int, int> hist_poisson{};
-    for (int i = 0; i < 100000; ++i) {
-        ++ hist_poisson[std::floor( scl * d_poisson())];
-    }
-
-    for(auto p : hist_poisson) {
-        std::cout << std::setw(2)
-                  << p.first / scl << ' ' << std::string(p.second/500, '*') << '\n';
-    }
-
 }

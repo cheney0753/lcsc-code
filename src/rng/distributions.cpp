@@ -10,10 +10,27 @@ namespace lcsc{
     return engine_.next() * (max_ - min_) / engine_.max() + min_;
 }
 
+    double uniform_int_distribution::pdf(uint64_t x) {
+        if (x <= max_ & x >= min_){
+            return 1.0f/(max_-min_);
+        } else{
+            return 0.0f;
+        }
+
+    }
+
 
     double uniform_real_distribution::operator()() {
         return double(engine_.next())  * (max_ - min_) / ( engine_.max() + min_);
         };
+
+    double uniform_real_distribution::pdf(double x) {
+        if (x <= max_ & x >= min_){
+            return 1.0f/(max_-min_);
+        } else{
+            return 0.0f;
+        }
+    }
 
     double normal_distribution::operator()() {
         auto d_unif = uniform_real_distribution( engine_, 0.0f,  1.0f);
@@ -31,6 +48,7 @@ namespace lcsc{
         }
 
         };
+
     double normal_distribution::pdf(double x){
         return 1 / sqrt( 2 * M_PI ) / stddev_ * exp( -pow(x - mean_, 2.0)/ 2 / pow( stddev_, 2 ));
 
@@ -55,7 +73,7 @@ namespace lcsc{
 
     }
 
-    double poisson_distribution::pdf(double k) {
+    double poisson_distribution::pdf(uint64_t k) {
 //        std::cout << mean_ << exp( -mean_)  << k << pow(mean_, k) << std::endl;
         return exp( - mean_) * pow(mean_, k) / utils::factorial( k);
     }

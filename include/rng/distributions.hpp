@@ -13,6 +13,7 @@ class uniform_int_distribution {
             engine_(engine), min_(min), max_(max){};
 
     uint64_t operator ()();
+    double pdf( uint64_t x);
 
   private:
     rng_engine& engine_;
@@ -26,6 +27,7 @@ class uniform_real_distribution {
                               double max = 1.0f):
             engine_(engine), min_(min), max_(max) {};
     double operator()();
+    double pdf(double x);
 
   private:
     rng_engine& engine_;
@@ -37,37 +39,42 @@ class normal_distribution {
   public:
     normal_distribution(rng_engine& engine, double mean = 0.0f, double stddev = 1.0f,
                         double min = 0.0f, double max = 1.0f):
-            engine_(engine), mean_(mean), stddev_(stddev), min_(min), max_(max) {};
+            engine_(engine), mean_(mean), stddev_(stddev),
+            min_(min), max_(max),
+            M_(1 / sqrt( 2 * M_PI ) / stddev_) {};
 
     double operator()();
+    double pdf(double x);
 
   private:
-    double pdf(double x);
     rng_engine& engine_;
     double mean_;
     double stddev_;
     double min_;
     double max_;
-    double M_ =  1 / sqrt( 2 * M_PI ) / stddev_;
+    double M_ ;
 };
 
 class poisson_distribution {
 public:
     poisson_distribution(rng_engine& engine, double mean = 0, uint64_t min = 0,
                          uint64_t max = 100):
-            engine_(engine), mean_(mean), min_(min), max_(max) {};
+            engine_(engine), mean_(mean), min_(min), max_(max),
+            M_( fmax( pdf(floor(mean_)), pdf(ceil(mean_)) ) ){};
     uint64_t operator()();
+    double pdf(uint64_t k);
 
 private:
-    double pdf( double x);
     rng_engine& engine_;
     double mean_;
     uint64_t max_;
     uint64_t min_;
-    double M_ = fmax( pdf(floor(mean_)), pdf(ceil(mean_)) );
+    double M_;
 
 };
 class bernoulli_distribution {};
 class discrete_distribution {};
+
+
 
 } // namespace lcsc

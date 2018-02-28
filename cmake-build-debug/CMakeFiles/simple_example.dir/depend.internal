@@ -6,17 +6,26 @@ CMakeFiles/simple_example.dir/example/simple_example.cpp.o
  ../include/rng/distributions.hpp
  ../include/rng/lcrng.hpp
  ../include/rng/rng.hpp
+ ../include/test/test.hpp
  ../include/utils/utils.hpp
- /export/scratch1/zhong/study/courses/lcsc/lcsc-code/example/simple_example.cpp
+ /home/zhong/Documents/LCSC/lcsc-code/example/simple_example.cpp
 CMakeFiles/simple_example.dir/src/rng/distributions.cpp.o
  ../include/rng/distributions.hpp
  ../include/rng/rng.hpp
  ../include/utils/utils.hpp
- /export/scratch1/zhong/study/courses/lcsc/lcsc-code/src/rng/distributions.cpp
+ /home/zhong/Documents/LCSC/lcsc-code/src/rng/distributions.cpp
 CMakeFiles/simple_example.dir/src/rng/lcrng.cpp.o
  ../include/rng/lcrng.hpp
  ../include/rng/rng.hpp
- /export/scratch1/zhong/study/courses/lcsc/lcsc-code/src/rng/lcrng.cpp
+ /home/zhong/Documents/LCSC/lcsc-code/src/rng/lcrng.cpp
+CMakeFiles/simple_example.dir/src/test/test.cpp.o
+ ../include/lcsc.hpp
+ ../include/rng/distributions.hpp
+ ../include/rng/lcrng.hpp
+ ../include/rng/rng.hpp
+ ../include/test/test.hpp
+ ../include/utils/utils.hpp
+ /home/zhong/Documents/LCSC/lcsc-code/src/test/test.cpp
 CMakeFiles/simple_example.dir/src/utils/utils.cpp.o
  ../include/utils/utils.hpp
- /export/scratch1/zhong/study/courses/lcsc/lcsc-code/src/utils/utils.cpp
+ /home/zhong/Documents/LCSC/lcsc-code/src/utils/utils.cpp

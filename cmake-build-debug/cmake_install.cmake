@@ -1,4 +1,4 @@
-# Install script for directory: /export/scratch1/zhong/study/courses/lcsc/lcsc-code
+# Install script for directory: /home/zhong/Documents/LCSC/lcsc-code
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -29,7 +29,7 @@ endif()
 
 # Install shared libraries without execute permission?
 if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  set(CMAKE_INSTALL_SO_NO_EXE "0")
+  set(CMAKE_INSTALL_SO_NO_EXE "1")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/export/scratch1/zhong/study/courses/lcsc/lcsc-code/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/zhong/Documents/LCSC/lcsc-code/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

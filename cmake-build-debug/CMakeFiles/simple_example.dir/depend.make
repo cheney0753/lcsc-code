@@ -5,6 +5,7 @@ CMakeFiles/simple_example.dir/example/simple_example.cpp.o: ../include/lcsc.hpp
 CMakeFiles/simple_example.dir/example/simple_example.cpp.o: ../include/rng/distributions.hpp
 CMakeFiles/simple_example.dir/example/simple_example.cpp.o: ../include/rng/lcrng.hpp
 CMakeFiles/simple_example.dir/example/simple_example.cpp.o: ../include/rng/rng.hpp
+CMakeFiles/simple_example.dir/example/simple_example.cpp.o: ../include/test/test.hpp
 CMakeFiles/simple_example.dir/example/simple_example.cpp.o: ../include/utils/utils.hpp
 CMakeFiles/simple_example.dir/example/simple_example.cpp.o: ../example/simple_example.cpp
 
@@ -16,6 +17,14 @@ CMakeFiles/simple_example.dir/src/rng/distributions.cpp.o: ../src/rng/distributi
 CMakeFiles/simple_example.dir/src/rng/lcrng.cpp.o: ../include/rng/lcrng.hpp
 CMakeFiles/simple_example.dir/src/rng/lcrng.cpp.o: ../include/rng/rng.hpp
 CMakeFiles/simple_example.dir/src/rng/lcrng.cpp.o: ../src/rng/lcrng.cpp
+
+CMakeFiles/simple_example.dir/src/test/test.cpp.o: ../include/lcsc.hpp
+CMakeFiles/simple_example.dir/src/test/test.cpp.o: ../include/rng/distributions.hpp
+CMakeFiles/simple_example.dir/src/test/test.cpp.o: ../include/rng/lcrng.hpp
+CMakeFiles/simple_example.dir/src/test/test.cpp.o: ../include/rng/rng.hpp
+CMakeFiles/simple_example.dir/src/test/test.cpp.o: ../include/test/test.hpp
+CMakeFiles/simple_example.dir/src/test/test.cpp.o: ../include/utils/utils.hpp
+CMakeFiles/simple_example.dir/src/test/test.cpp.o: ../src/test/test.cpp
 
 CMakeFiles/simple_example.dir/src/utils/utils.cpp.o: ../include/utils/utils.hpp
 CMakeFiles/simple_example.dir/src/utils/utils.cpp.o: ../src/utils/utils.cpp
