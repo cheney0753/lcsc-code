@@ -32,8 +32,22 @@ rng.hpp
 cstdint
 -
 
+../include/rng/mt19937.hpp
+rng.hpp
+../include/rng/rng.hpp
+random
+-
+
 ../include/rng/rng.hpp
 cstdint
+-
+
+../include/rng/xorshift.hpp
+rng.hpp
+../include/rng/rng.hpp
+cstdint
+-
+limits
 -
 
 ../include/test/test.hpp
@@ -52,11 +66,11 @@ cmath
 cstdint
 -
 
-/home/zhong/Documents/LCSC/lcsc-code/example/simple_example.cpp
+/export/scratch1/zhong/study/courses/lcsc/lcsc-code/example/simple_example.cpp
 iostream
 -
 lcsc.hpp
-/home/zhong/Documents/LCSC/lcsc-code/example/lcsc.hpp
+/export/scratch1/zhong/study/courses/lcsc/lcsc-code/example/lcsc.hpp
 map
 -
 cmath
@@ -69,30 +83,42 @@ ctime
 -
 vector
 -
+rng/xorshift.hpp
+-
+random
+-
+rng/mt19937.hpp
+-
 
-/home/zhong/Documents/LCSC/lcsc-code/src/rng/distributions.cpp
+/export/scratch1/zhong/study/courses/lcsc/lcsc-code/src/rng/distributions.cpp
 rng/distributions.hpp
-/home/zhong/Documents/LCSC/lcsc-code/src/rng/rng/distributions.hpp
+/export/scratch1/zhong/study/courses/lcsc/lcsc-code/src/rng/rng/distributions.hpp
 iostream
 -
 utils/utils.hpp
-/home/zhong/Documents/LCSC/lcsc-code/src/rng/utils/utils.hpp
+/export/scratch1/zhong/study/courses/lcsc/lcsc-code/src/rng/utils/utils.hpp
 
-/home/zhong/Documents/LCSC/lcsc-code/src/rng/lcrng.cpp
+/export/scratch1/zhong/study/courses/lcsc/lcsc-code/src/rng/lcrng.cpp
 rng/lcrng.hpp
-/home/zhong/Documents/LCSC/lcsc-code/src/rng/rng/lcrng.hpp
+/export/scratch1/zhong/study/courses/lcsc/lcsc-code/src/rng/rng/lcrng.hpp
 iostream
 -
 
-/home/zhong/Documents/LCSC/lcsc-code/src/test/test.cpp
+/export/scratch1/zhong/study/courses/lcsc/lcsc-code/src/rng/mt19937.cpp
+rng/mt19937.hpp
+/export/scratch1/zhong/study/courses/lcsc/lcsc-code/src/rng/rng/mt19937.hpp
+
+/export/scratch1/zhong/study/courses/lcsc/lcsc-code/src/rng/xorshift.cpp
+rng/xorshift.hpp
+/export/scratch1/zhong/study/courses/lcsc/lcsc-code/src/rng/rng/xorshift.hpp
+
+/export/scratch1/zhong/study/courses/lcsc/lcsc-code/src/test/test.cpp
 test/test.hpp
-/home/zhong/Documents/LCSC/lcsc-code/src/test/test/test.hpp
-iostream
--
+/export/scratch1/zhong/study/courses/lcsc/lcsc-code/src/test/test/test.hpp
 iomanip
 -
 
-/home/zhong/Documents/LCSC/lcsc-code/src/utils/utils.cpp
+/export/scratch1/zhong/study/courses/lcsc/lcsc-code/src/utils/utils.cpp
 utils/utils.hpp
-/home/zhong/Documents/LCSC/lcsc-code/src/utils/utils/utils.hpp
+/export/scratch1/zhong/study/courses/lcsc/lcsc-code/src/utils/utils/utils.hpp
 

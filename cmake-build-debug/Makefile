@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/zhong/Programs/clion-2017.3.3/bin/cmake/bin/cmake
+CMAKE_COMMAND = /ufs/zhong/usr/clion-2017.3.3/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /home/zhong/Programs/clion-2017.3.3/bin/cmake/bin/cmake -E remove -f
+RM = /ufs/zhong/usr/clion-2017.3.3/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zhong/Documents/LCSC/lcsc-code
+CMAKE_SOURCE_DIR = /export/scratch1/zhong/study/courses/lcsc/lcsc-code
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zhong/Documents/LCSC/lcsc-code/cmake-build-debug
+CMAKE_BINARY_DIR = /export/scratch1/zhong/study/courses/lcsc/lcsc-code/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/zhong/Documents/LCSC/lcsc-code/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/zhong/Programs/clion-2017.3.3/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/ufs/zhong/usr/clion-2017.3.3/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/zhong/Programs/clion-2017.3.3/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/ufs/zhong/usr/clion-2017.3.3/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zhong/Documents/LCSC/lcsc-code/cmake-build-debug/CMakeFiles /home/zhong/Documents/LCSC/lcsc-code/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /export/scratch1/zhong/study/courses/lcsc/lcsc-code/cmake-build-debug/CMakeFiles /export/scratch1/zhong/study/courses/lcsc/lcsc-code/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zhong/Documents/LCSC/lcsc-code/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /export/scratch1/zhong/study/courses/lcsc/lcsc-code/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -204,6 +204,60 @@ src/rng/lcrng.cpp.s:
 	$(MAKE) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/src/rng/lcrng.cpp.s
 .PHONY : src/rng/lcrng.cpp.s
 
+src/rng/mt19937.o: src/rng/mt19937.cpp.o
+
+.PHONY : src/rng/mt19937.o
+
+# target to build an object file
+src/rng/mt19937.cpp.o:
+	$(MAKE) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/src/rng/mt19937.cpp.o
+.PHONY : src/rng/mt19937.cpp.o
+
+src/rng/mt19937.i: src/rng/mt19937.cpp.i
+
+.PHONY : src/rng/mt19937.i
+
+# target to preprocess a source file
+src/rng/mt19937.cpp.i:
+	$(MAKE) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/src/rng/mt19937.cpp.i
+.PHONY : src/rng/mt19937.cpp.i
+
+src/rng/mt19937.s: src/rng/mt19937.cpp.s
+
+.PHONY : src/rng/mt19937.s
+
+# target to generate assembly for a file
+src/rng/mt19937.cpp.s:
+	$(MAKE) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/src/rng/mt19937.cpp.s
+.PHONY : src/rng/mt19937.cpp.s
+
+src/rng/xorshift.o: src/rng/xorshift.cpp.o
+
+.PHONY : src/rng/xorshift.o
+
+# target to build an object file
+src/rng/xorshift.cpp.o:
+	$(MAKE) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/src/rng/xorshift.cpp.o
+.PHONY : src/rng/xorshift.cpp.o
+
+src/rng/xorshift.i: src/rng/xorshift.cpp.i
+
+.PHONY : src/rng/xorshift.i
+
+# target to preprocess a source file
+src/rng/xorshift.cpp.i:
+	$(MAKE) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/src/rng/xorshift.cpp.i
+.PHONY : src/rng/xorshift.cpp.i
+
+src/rng/xorshift.s: src/rng/xorshift.cpp.s
+
+.PHONY : src/rng/xorshift.s
+
+# target to generate assembly for a file
+src/rng/xorshift.cpp.s:
+	$(MAKE) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/src/rng/xorshift.cpp.s
+.PHONY : src/rng/xorshift.cpp.s
+
 src/test/test.o: src/test/test.cpp.o
 
 .PHONY : src/test/test.o
@@ -276,6 +330,12 @@ help:
 	@echo "... src/rng/lcrng.o"
 	@echo "... src/rng/lcrng.i"
 	@echo "... src/rng/lcrng.s"
+	@echo "... src/rng/mt19937.o"
+	@echo "... src/rng/mt19937.i"
+	@echo "... src/rng/mt19937.s"
+	@echo "... src/rng/xorshift.o"
+	@echo "... src/rng/xorshift.i"
+	@echo "... src/rng/xorshift.s"
 	@echo "... src/test/test.o"
 	@echo "... src/test/test.i"
 	@echo "... src/test/test.s"

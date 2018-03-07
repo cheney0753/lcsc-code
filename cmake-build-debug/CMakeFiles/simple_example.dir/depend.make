@@ -4,7 +4,9 @@
 CMakeFiles/simple_example.dir/example/simple_example.cpp.o: ../include/lcsc.hpp
 CMakeFiles/simple_example.dir/example/simple_example.cpp.o: ../include/rng/distributions.hpp
 CMakeFiles/simple_example.dir/example/simple_example.cpp.o: ../include/rng/lcrng.hpp
+CMakeFiles/simple_example.dir/example/simple_example.cpp.o: ../include/rng/mt19937.hpp
 CMakeFiles/simple_example.dir/example/simple_example.cpp.o: ../include/rng/rng.hpp
+CMakeFiles/simple_example.dir/example/simple_example.cpp.o: ../include/rng/xorshift.hpp
 CMakeFiles/simple_example.dir/example/simple_example.cpp.o: ../include/test/test.hpp
 CMakeFiles/simple_example.dir/example/simple_example.cpp.o: ../include/utils/utils.hpp
 CMakeFiles/simple_example.dir/example/simple_example.cpp.o: ../example/simple_example.cpp
@@ -17,6 +19,14 @@ CMakeFiles/simple_example.dir/src/rng/distributions.cpp.o: ../src/rng/distributi
 CMakeFiles/simple_example.dir/src/rng/lcrng.cpp.o: ../include/rng/lcrng.hpp
 CMakeFiles/simple_example.dir/src/rng/lcrng.cpp.o: ../include/rng/rng.hpp
 CMakeFiles/simple_example.dir/src/rng/lcrng.cpp.o: ../src/rng/lcrng.cpp
+
+CMakeFiles/simple_example.dir/src/rng/mt19937.cpp.o: ../include/rng/mt19937.hpp
+CMakeFiles/simple_example.dir/src/rng/mt19937.cpp.o: ../include/rng/rng.hpp
+CMakeFiles/simple_example.dir/src/rng/mt19937.cpp.o: ../src/rng/mt19937.cpp
+
+CMakeFiles/simple_example.dir/src/rng/xorshift.cpp.o: ../include/rng/rng.hpp
+CMakeFiles/simple_example.dir/src/rng/xorshift.cpp.o: ../include/rng/xorshift.hpp
+CMakeFiles/simple_example.dir/src/rng/xorshift.cpp.o: ../src/rng/xorshift.cpp
 
 CMakeFiles/simple_example.dir/src/test/test.cpp.o: ../include/lcsc.hpp
 CMakeFiles/simple_example.dir/src/test/test.cpp.o: ../include/rng/distributions.hpp

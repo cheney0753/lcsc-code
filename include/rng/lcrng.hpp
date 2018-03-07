@@ -7,6 +7,7 @@ namespace lcsc {
 
 class lcrng : public rng_engine {
   public:
+    lcrng( uint64_t seed): x_(seed) {};
     uint64_t next() override;
     uint64_t max() override {
         return m_;
@@ -19,7 +20,7 @@ class lcrng : public rng_engine {
     // Default: Park-Miller
     uint64_t a_ = 16807;
     uint64_t c_ = 0;
-    uint64_t x_ = 123;
+    uint64_t x_ ;
     uint64_t m_ = (1<<31)-1;
     uint64_t q_ = m_ / a_;
     uint64_t r_ = m_ % a_;

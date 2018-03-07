@@ -3,24 +3,14 @@
 //
 
 #include "test/test.hpp"
-#include <iostream>
 #include <iomanip>
 namespace lcsc{
 
-    hist::hist(auto & dist, uint64_t N, double scaling):
-            N_(N), scaling_(scaling) {
+    uint64_t hist_cont::get_N() {return N_;}
 
-        for (int i = 0; i < N_; ++i) {
-            ++ hist_map_[ std::floor( dist() / scaling) * scaling];
-        }
+    const  std::map<double, uint64_t > & hist_cont::get_hist_map() { return hist_map_; }
 
-        std::cout << "A histogram of "<< N_ << " samples has been generated. \n";
-    }
-
-    double hist::get_N() {return N_;}
-    const & std::map<double, int> hist::get_hist_map() { return hist_map_; }
-
-    void hist::plot( uint64_t star_width = 50){
+    void hist_cont::plot( uint64_t star_width = 50){
 
         std::cout << "Plot the histogram for "<< N_
                   << " samples, with each * means "<< star_width << " samples. \n";
@@ -30,6 +20,24 @@ namespace lcsc{
                       << p.first  << ' ' << std::string(p.second/star_width, '*') << '\n';
         }
     }
+
+
+
+    uint64_t hist_disc::get_N() {return N_;}
+
+    const  std::map<double, uint64_t > & hist_disc::get_hist_map() { return hist_map_; }
+
+    void hist_disc::plot( uint64_t star_width = 50){
+
+        std::cout << "Plot the histogram for "<< N_
+                  << " samples, with each * means "<< star_width << " samples. \n";
+
+        for(auto p : hist_map_) {
+            std::cout << std::setw(2)
+                      << p.first  << ' ' << std::string(p.second/star_width, '*') << '\n';
+        }
+    }
+
 
 
 }//namespace lcsc

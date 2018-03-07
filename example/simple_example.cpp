@@ -7,10 +7,12 @@
 #include <string>
 #include <ctime>
 #include <vector>
-
+#include <rng/xorshift.hpp>
+#include <random>
+#include <rng/mt19937.hpp>
 
 int main() {
-    auto r = lcsc::lcrng();
+//    auto r = lcsc::lcrng();
 //    for (int i = 0; i < 100; ++i) {
 //        std::cout << r.next() << "\n";
 //    }
@@ -19,18 +21,31 @@ int main() {
 //    for (int i = 0; i < 100; ++i) {
 //        std::cout << r.next_schrage() << "\n";
 //    }
+//    auto r = lcsc::lcrng( 9);
+//    for (int i = 0; i < 100; ++i) {
+//        std::cout << r.next() << "\n";
+//    }
+//
+//    std::cout << r.max() << " max \n";
+
+    // question, how to implment mt19937? !!!!!!!!!!!!
+    auto r = lcsc::mt19937_rng(9);
+    for (int i = 0; i < 100; ++i) {
+        std::cout <<r.next() << "\n";
+    }
+
 
     auto d_unif_int = lcsc::uniform_int_distribution( r, 0, 100);
 
-//    auto d = lcsc::uniform_real_distribution( r);
+    auto d = lcsc::uniform_real_distribution( r);
 
-    auto d_normal = lcsc::normal_distribution(r,  1.0f, 2.0f, -6.0f, 6.0f);
+    auto d_normal = lcsc::normal_distribution(r,  1.0f, 1.0f, -1.0f, 6.0f);
 
-    auto hist_normal = lcsc::hist(d_normal, 100000, 0.1f);
-    hist_normal.plot(50);
+    auto hist_normal = lcsc::hist_cont(d_normal, 1000000, 0.1);
+    hist_normal.plot(500);
 
 
-    auto hist_unif_int = lcsc::hist(d_unif_int, 100000, 1.0f);
+    auto hist_unif_int = lcsc::hist_disc(d_unif_int, 100000, 1.0f);
     hist_unif_int.plot(50);
 
 
