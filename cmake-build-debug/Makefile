@@ -39,19 +39,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /ufs/zhong/usr/clion-2017.3.3/bin/cmake/bin/cmake
+CMAKE_COMMAND = /home/zhong/Programs/clion-2017.3.3/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /ufs/zhong/usr/clion-2017.3.3/bin/cmake/bin/cmake -E remove -f
+RM = /home/zhong/Programs/clion-2017.3.3/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /export/scratch1/zhong/study/courses/lcsc/lcsc-code
+CMAKE_SOURCE_DIR = /home/zhong/Documents/LCSC/lcsc-code
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /export/scratch1/zhong/study/courses/lcsc/lcsc-code/cmake-build-debug
+CMAKE_BINARY_DIR = /home/zhong/Documents/LCSC/lcsc-code/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /export/scratch1/zhong/study/courses/lcsc/lcsc-code/cmake-bui
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/ufs/zhong/usr/clion-2017.3.3/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/home/zhong/Programs/clion-2017.3.3/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/ufs/zhong/usr/clion-2017.3.3/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/home/zhong/Programs/clion-2017.3.3/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /export/scratch1/zhong/study/courses/lcsc/lcsc-code/cmake-build-debug/CMakeFiles /export/scratch1/zhong/study/courses/lcsc/lcsc-code/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zhong/Documents/LCSC/lcsc-code/cmake-build-debug/CMakeFiles /home/zhong/Documents/LCSC/lcsc-code/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /export/scratch1/zhong/study/courses/lcsc/lcsc-code/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zhong/Documents/LCSC/lcsc-code/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -149,6 +149,33 @@ example/simple_example.s: example/simple_example.cpp.s
 example/simple_example.cpp.s:
 	$(MAKE) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/example/simple_example.cpp.s
 .PHONY : example/simple_example.cpp.s
+
+src/mc/mc_intg.o: src/mc/mc_intg.cpp.o
+
+.PHONY : src/mc/mc_intg.o
+
+# target to build an object file
+src/mc/mc_intg.cpp.o:
+	$(MAKE) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/src/mc/mc_intg.cpp.o
+.PHONY : src/mc/mc_intg.cpp.o
+
+src/mc/mc_intg.i: src/mc/mc_intg.cpp.i
+
+.PHONY : src/mc/mc_intg.i
+
+# target to preprocess a source file
+src/mc/mc_intg.cpp.i:
+	$(MAKE) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/src/mc/mc_intg.cpp.i
+.PHONY : src/mc/mc_intg.cpp.i
+
+src/mc/mc_intg.s: src/mc/mc_intg.cpp.s
+
+.PHONY : src/mc/mc_intg.s
+
+# target to generate assembly for a file
+src/mc/mc_intg.cpp.s:
+	$(MAKE) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/src/mc/mc_intg.cpp.s
+.PHONY : src/mc/mc_intg.cpp.s
 
 src/rng/distributions.o: src/rng/distributions.cpp.o
 
@@ -324,6 +351,9 @@ help:
 	@echo "... example/simple_example.o"
 	@echo "... example/simple_example.i"
 	@echo "... example/simple_example.s"
+	@echo "... src/mc/mc_intg.o"
+	@echo "... src/mc/mc_intg.i"
+	@echo "... src/mc/mc_intg.s"
 	@echo "... src/rng/distributions.o"
 	@echo "... src/rng/distributions.i"
 	@echo "... src/rng/distributions.s"

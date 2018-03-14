@@ -6,6 +6,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/simple_example.dir/src/test/test.cpp.o"
   "CMakeFiles/simple_example.dir/src/rng/xorshift.cpp.o"
   "CMakeFiles/simple_example.dir/src/rng/mt19937.cpp.o"
+  "CMakeFiles/simple_example.dir/src/mc/mc_intg.cpp.o"
   "bin/simple_example.pdb"
   "bin/simple_example"
 )

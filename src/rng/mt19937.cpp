@@ -7,8 +7,7 @@
 namespace lcsc{
 
     uint64_t mt19937_rng::next() {
-        auto mt_engine = std::mt19937(x_);
-        x_ = mt_engine();
+        x_ = stdmt();
         return x_;
 
     }
