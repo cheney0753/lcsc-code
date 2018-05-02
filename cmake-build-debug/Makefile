@@ -39,10 +39,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/zhong/Programs/clion-2017.3.3/bin/cmake/bin/cmake
+CMAKE_COMMAND = /etc/clion/clion-2017.3.4/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /home/zhong/Programs/clion-2017.3.3/bin/cmake/bin/cmake -E remove -f
+RM = /etc/clion/clion-2017.3.4/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/zhong/Documents/LCSC/lcsc-code/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/zhong/Programs/clion-2017.3.3/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/etc/clion/clion-2017.3.4/bin/cmake/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/zhong/Programs/clion-2017.3.3/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/etc/clion/clion-2017.3.4/bin/cmake/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -176,6 +176,33 @@ src/mc/mc_intg.s: src/mc/mc_intg.cpp.s
 src/mc/mc_intg.cpp.s:
 	$(MAKE) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/src/mc/mc_intg.cpp.s
 .PHONY : src/mc/mc_intg.cpp.s
+
+src/mc/mdmc_intg.o: src/mc/mdmc_intg.cpp.o
+
+.PHONY : src/mc/mdmc_intg.o
+
+# target to build an object file
+src/mc/mdmc_intg.cpp.o:
+	$(MAKE) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/src/mc/mdmc_intg.cpp.o
+.PHONY : src/mc/mdmc_intg.cpp.o
+
+src/mc/mdmc_intg.i: src/mc/mdmc_intg.cpp.i
+
+.PHONY : src/mc/mdmc_intg.i
+
+# target to preprocess a source file
+src/mc/mdmc_intg.cpp.i:
+	$(MAKE) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/src/mc/mdmc_intg.cpp.i
+.PHONY : src/mc/mdmc_intg.cpp.i
+
+src/mc/mdmc_intg.s: src/mc/mdmc_intg.cpp.s
+
+.PHONY : src/mc/mdmc_intg.s
+
+# target to generate assembly for a file
+src/mc/mdmc_intg.cpp.s:
+	$(MAKE) -f CMakeFiles/simple_example.dir/build.make CMakeFiles/simple_example.dir/src/mc/mdmc_intg.cpp.s
+.PHONY : src/mc/mdmc_intg.cpp.s
 
 src/rng/distributions.o: src/rng/distributions.cpp.o
 
@@ -354,6 +381,9 @@ help:
 	@echo "... src/mc/mc_intg.o"
 	@echo "... src/mc/mc_intg.i"
 	@echo "... src/mc/mc_intg.s"
+	@echo "... src/mc/mdmc_intg.o"
+	@echo "... src/mc/mdmc_intg.i"
+	@echo "... src/mc/mdmc_intg.s"
 	@echo "... src/rng/distributions.o"
 	@echo "... src/rng/distributions.i"
 	@echo "... src/rng/distributions.s"

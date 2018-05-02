@@ -4,6 +4,8 @@
 CMakeFiles/simple_example.dir/example/simple_example.cpp.o
  ../include/lcsc.hpp
  ../include/mc/mc_intg.hpp
+ ../include/mc/mdmc_intg.hpp
+ ../include/rng/dist.hpp
  ../include/rng/distributions.hpp
  ../include/rng/lcrng.hpp
  ../include/rng/mt19937.hpp
@@ -14,11 +16,20 @@ CMakeFiles/simple_example.dir/example/simple_example.cpp.o
  /home/zhong/Documents/LCSC/lcsc-code/example/simple_example.cpp
 CMakeFiles/simple_example.dir/src/mc/mc_intg.cpp.o
  ../include/mc/mc_intg.hpp
+ ../include/rng/dist.hpp
  ../include/rng/distributions.hpp
- ../include/rng/mt19937.hpp
  ../include/rng/rng.hpp
+ ../include/utils/utils.hpp
  /home/zhong/Documents/LCSC/lcsc-code/src/mc/mc_intg.cpp
+CMakeFiles/simple_example.dir/src/mc/mdmc_intg.cpp.o
+ ../include/mc/mdmc_intg.hpp
+ ../include/rng/dist.hpp
+ ../include/rng/distributions.hpp
+ ../include/rng/rng.hpp
+ ../include/utils/utils.hpp
+ /home/zhong/Documents/LCSC/lcsc-code/src/mc/mdmc_intg.cpp
 CMakeFiles/simple_example.dir/src/rng/distributions.cpp.o
+ ../include/rng/dist.hpp
  ../include/rng/distributions.hpp
  ../include/rng/rng.hpp
  ../include/utils/utils.hpp
@@ -38,13 +49,20 @@ CMakeFiles/simple_example.dir/src/rng/xorshift.cpp.o
 CMakeFiles/simple_example.dir/src/test/test.cpp.o
  ../include/lcsc.hpp
  ../include/mc/mc_intg.hpp
+ ../include/mc/mdmc_intg.hpp
+ ../include/rng/dist.hpp
  ../include/rng/distributions.hpp
  ../include/rng/lcrng.hpp
  ../include/rng/mt19937.hpp
  ../include/rng/rng.hpp
+ ../include/rng/xorshift.hpp
  ../include/test/test.hpp
  ../include/utils/utils.hpp
  /home/zhong/Documents/LCSC/lcsc-code/src/test/test.cpp
 CMakeFiles/simple_example.dir/src/utils/utils.cpp.o
+ ../include/rng/dist.hpp
+ ../include/rng/distributions.hpp
+ ../include/rng/mt19937.hpp
+ ../include/rng/rng.hpp
  ../include/utils/utils.hpp
  /home/zhong/Documents/LCSC/lcsc-code/src/utils/utils.cpp

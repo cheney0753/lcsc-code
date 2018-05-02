@@ -6,19 +6,20 @@
 
 #include <cstdint>
 #include <functional>
-#include "rng/distributions.hpp"
-#include "rng/mt19937.hpp"
+#include <vector>
+#include <stdexcept>
+#include "rng/rng.hpp"
 namespace lcsc{
 
 class mc_intg{
 
     public:
     mc_intg(std::function< double (double)> f): f_(f) {}; // constructor
-        double integrate_hm( double a = 0.0, double b  =1.0,  uint64_t N = 10000 ); // N is the number of samples
-        double integrate_ss( double a = 0.0, double b  =1.0,  uint64_t N = 10000 ); // N is the number of samples
-
+        double integrate_hm(rng_engine & r,  const double & a,  const double &  b, const uint64_t & N  = 10000); // N is the number of samples
+        double integrate_ss( rng_engine & r,  const double & a,  const double &  b, const uint64_t & N  = 10000); // N is the number of samples
     private:
         std::function< double ( double ) > f_ ; // the function f()
+//        std::function< double ( std::vector<double> ) > f_md_;
 };
 
 }

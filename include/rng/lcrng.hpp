@@ -17,7 +17,7 @@ class lcrng : public rng_engine {
     }
     uint64_t next_schrage();
   private:
-    // Default: Park-Miller
+    // Default: Park-Miller settings
     uint64_t a_ = 16807;
     uint64_t c_ = 0;
     uint64_t x_ ;

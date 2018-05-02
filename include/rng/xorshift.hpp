@@ -11,7 +11,7 @@ namespace lcsc{
         uint64_t next() override;
         uint64_t max() override {
             return std::numeric_limits<uint32_t>::max();
-        }
+        } //
         uint64_t  min() override {
             return std::numeric_limits<uint32_t>::min();
         }
@@ -19,5 +19,5 @@ namespace lcsc{
 
     private:
         uint32_t x_;
-    };
+    }; // an uint32_t xorshift rng engine
 }

@@ -1,5 +1,4 @@
 #include "rng/lcrng.hpp"
-#include <iostream>
 namespace lcsc {
 
 uint64_t lcrng::next() {

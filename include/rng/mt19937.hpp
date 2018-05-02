@@ -20,5 +20,5 @@ namespace lcsc{
         std::mt19937 stdmt; // declare the stdmt object and initialize it in the constructor.
         uint64_t x_;
 //        define an engine here ?
-    };
+    }; // a mt19937 engine based on the std implementation
 }

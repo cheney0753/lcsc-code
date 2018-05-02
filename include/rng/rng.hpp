@@ -9,7 +9,7 @@ class rng_engine {
     virtual uint64_t next() = 0;
     virtual uint64_t max() = 0;
     virtual uint64_t min() = 0;
-};
+}; // virtual class for rng_engine
 
 } // namespace lcsc
 

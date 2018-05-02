@@ -13,7 +13,7 @@ namespace lcsc{
     void hist_cont::plot( uint64_t star_width = 50){
 
         std::cout << "Plot the histogram for "<< N_
-                  << " samples, with each * means "<< star_width << " samples. \n";
+                  << " samples. Each * means "<< star_width << " samples. \n";
 
         for(auto p : hist_map_) {
             std::cout << std::setw(2)
@@ -30,7 +30,7 @@ namespace lcsc{
     void hist_disc::plot( uint64_t star_width = 50){
 
         std::cout << "Plot the histogram for "<< N_
-                  << " samples, with each * means "<< star_width << " samples. \n";
+                  << " samples. Each * means "<< star_width << " samples. \n";
 
         for(auto p : hist_map_) {
             std::cout << std::setw(2)

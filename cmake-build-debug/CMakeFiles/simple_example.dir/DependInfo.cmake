@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/zhong/Documents/LCSC/lcsc-code/example/simple_example.cpp" "/home/zhong/Documents/LCSC/lcsc-code/cmake-build-debug/CMakeFiles/simple_example.dir/example/simple_example.cpp.o"
   "/home/zhong/Documents/LCSC/lcsc-code/src/mc/mc_intg.cpp" "/home/zhong/Documents/LCSC/lcsc-code/cmake-build-debug/CMakeFiles/simple_example.dir/src/mc/mc_intg.cpp.o"
+  "/home/zhong/Documents/LCSC/lcsc-code/src/mc/mdmc_intg.cpp" "/home/zhong/Documents/LCSC/lcsc-code/cmake-build-debug/CMakeFiles/simple_example.dir/src/mc/mdmc_intg.cpp.o"
   "/home/zhong/Documents/LCSC/lcsc-code/src/rng/distributions.cpp" "/home/zhong/Documents/LCSC/lcsc-code/cmake-build-debug/CMakeFiles/simple_example.dir/src/rng/distributions.cpp.o"
   "/home/zhong/Documents/LCSC/lcsc-code/src/rng/lcrng.cpp" "/home/zhong/Documents/LCSC/lcsc-code/cmake-build-debug/CMakeFiles/simple_example.dir/src/rng/lcrng.cpp.o"
   "/home/zhong/Documents/LCSC/lcsc-code/src/rng/mt19937.cpp" "/home/zhong/Documents/LCSC/lcsc-code/cmake-build-debug/CMakeFiles/simple_example.dir/src/rng/mt19937.cpp.o"

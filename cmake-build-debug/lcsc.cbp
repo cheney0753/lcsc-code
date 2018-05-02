@@ -89,7 +89,13 @@
 		<Unit filename="/home/zhong/Documents/LCSC/lcsc-code/example/simple_example.cpp">
 			<Option target="simple_example"/>
 		</Unit>
+		<Unit filename="/home/zhong/Documents/LCSC/lcsc-code/include/rng/dist.hpp">
+			<Option target="simple_example"/>
+		</Unit>
 		<Unit filename="/home/zhong/Documents/LCSC/lcsc-code/src/mc/mc_intg.cpp">
+			<Option target="simple_example"/>
+		</Unit>
+		<Unit filename="/home/zhong/Documents/LCSC/lcsc-code/src/mc/mdmc_intg.cpp">
 			<Option target="simple_example"/>
 		</Unit>
 		<Unit filename="/home/zhong/Documents/LCSC/lcsc-code/src/rng/distributions.cpp">

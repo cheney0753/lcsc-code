@@ -8,6 +8,6 @@ set(CMAKE_CXX_STANDARD 14)
 
 add_executable(simple_example "example/simple_example.cpp"
         "src/rng/lcrng.cpp" "src/rng/distributions.cpp" "src/utils/utils.cpp"
-        src/test/test.cpp src/rng/xorshift.cpp src/rng/mt19937.cpp src/mc/mc_intg.cpp)
+        src/test/test.cpp src/rng/xorshift.cpp src/rng/mt19937.cpp src/mc/mc_intg.cpp src/mc/mdmc_intg.cpp src/mc/mdmc_intg.cpp include/rng/dist.hpp)
 
 #include/test/test.h
