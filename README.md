@@ -1,3 +1,3 @@
 # Laboratory Class Scientific Computing
 
-This repository contains example code for the Utrecht University LCSC course (WISM454). It is deliberately sparse, students are expected to design and implement their own interfaces.
+This repository contains the codes for the Utrecht University LCSC course (WISM454). Implemented by Zhichao Zhong (zhong@cwi.nl)
